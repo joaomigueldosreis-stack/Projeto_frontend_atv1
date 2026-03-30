@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="barra">
+        <div class="marca">Mercadinho<br>do Big Bom</div>
+
+        <nav class="nav-links">
+            <button class="nav-btn" onclick="window.location.href='../index.html'">Home</button>
+            <button class="nav-btn" onclick="window.location.href='../ofertas.html'">Ofertas</button>
+            <button class="nav-btn" onclick="window.location.href='../sobre.html'">Sobre</button>
+            <button class="nav-btn" onclick="window.location.href='../contato.html'">Contato</button>
+        </nav>
+
+        <form class="pesquisa" action="/buscar" method="get">
+            <input type="search" name="q" placeholder="Pesquisar produtos, marcas..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    
     <div class="container">
         <div class="card">
             <img src="../imgs/transferir (2).jpg" alt="Picanha">
@@ -36,6 +52,13 @@
             <img src="../imgs/atum.jpg" alt="Atum">
             <h2>Atum</h2>
             <p>Atum de extrema qualidade e suculência, direto das águas da pedida Atlântida!</p>
+        </div>
+
+
+        <div class="card">
+            <img src="../imgs/tilapia.jpg" alt="Tilápia">
+            <h2>Tilápia</h2>
+            <p>Tilápia de extrema qualidade e suculência, direto das águas da pedida Atlântida!</p>
         </div>
     </div>
 </body> 

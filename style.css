@@ -110,6 +110,35 @@ a {
     padding: 0 20px;
 }
 
+.sobre-conteudo {
+    grid-column: 1 / -1;
+    background: #ffffff;
+    border: 1px solid #dbe6ff;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.sobre-conteudo p {
+    color: #22314f;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.sobre-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.sobre-imagens img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #c7d6f8;
+}
+
 .card {
     background: white;
     border-radius: 12px;
