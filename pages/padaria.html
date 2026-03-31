@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/carnes.css">
+    <title>Padaria e Confeitaria</title>
+</head>
+<body>
+    <header class="barra">
+        <div class="marca">Mercadinho<br>do Big Bom</div>
+
+        <nav class="nav-links">
+            <button class="nav-btn" onclick="window.location.href='../index.html'">Home</button>
+            <button class="nav-btn" onclick="window.location.href='../ofertas.html'">Ofertas</button>
+            <button class="nav-btn" onclick="window.location.href='../sobre.html'">Sobre</button>
+            <button class="nav-btn" onclick="window.location.href='../contato.html'">Contato</button>
+        </nav>
+
+        <form class="pesquisa" action="/buscar" method="get">
+            <input type="search" name="q" placeholder="Pesquisar produtos, marcas..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <img src="../imgs/cacetinho.jpg" alt="Cacetinho">
+            <h2>Cacetinho</h2>
+            <p>Pão francês fresco com a casca crocante!</p>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/bolo.jpg" alt="Bolo">
+            <h2>Bolo</h2>
+            <p>Bolos frescos feitos diariamente!</p>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/integral.jpg" alt="Pão">
+            <h2>Pão Integral</h2>
+            <p>Pão integral saudável e delicioso!</p>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/doces.jpg" alt="Doces">
+            <h2>Doces e Confeitaria</h2>
+            <p>Doces variados para suas celebrações!</p>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/cookie.jpg" alt="Biscoitos">
+            <h2>Biscoitos</h2>
+            <p>Biscoitos crocantes em várias sabores!</p>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/broa.jpg" alt="Broa">
+            <h2>Broa</h2>
+            <p>Broa caseira com receita tradicional!</p>
+        </div>
+    </div>
+</body> 
+</html>
