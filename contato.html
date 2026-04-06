@@ -38,8 +38,26 @@
             <p><strong>E-mail:</strong> contato@bigbom.com.br</p>
             <p><strong>Horário:</strong> Seg-Sex 08:00–19:00 | Sáb 08:00–13:00</p>
             <p><strong>Atendimento:</strong> Presencial e entrega local</p>
-            <p><strong>Dica:</strong> Ligue antes em feriados para confirmar disponibilidade.</p>
+            <p><strong>Dica:</strong> <button id="showHelp" class="help-btn" type="button">?</button></p>
+            <div id="luvaHelp" class="help-card hidden">
+                <img src="https://www.estadao.com.br/resizer/v2/C4QWIXJFK5F6FL75YAGFXTHXIE.jpg?quality=80&auth=5a2d8567ad009e15e7b48793d54f09c1989541ec808009475c6f547374814bfc&width=380" alt="Luva de Pedreiro">
+            </div>
         </section>
     </main>
+
+    <script>
+        document.getElementById('showHelp').addEventListener('click', function(e) {
+            e.preventDefault();
+            const card = document.getElementById('luvaHelp');
+            const isHidden = card.classList.contains('hidden');
+            if (isHidden) {
+                card.classList.remove('hidden');
+                this.textContent = '×';
+            } else {
+                card.classList.add('hidden');
+                this.textContent = '?';
+            }
+        });
+    </script>
 </body>
 </html>
